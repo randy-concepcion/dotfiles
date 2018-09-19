@@ -104,3 +104,9 @@ alias ls='ls --color=auto'
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+# Add jmeter to path
+export PATH="$PATH:/opt/apache-jmeter/bin"
+
+# Git
+export GIT_EDITOR=vim
