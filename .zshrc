@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/randyc/.oh-my-zsh
+export ZSH=/home/randyc/.oh-my-zsh
 
 export TERM="xterm-256color"
 
@@ -68,7 +68,7 @@ POWERLEVEL9K_HISTORY_BACKGROUND="024"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
