@@ -17,3 +17,5 @@ set expandtab       " Expand TABs to spaces
 
 set list
 set listchars=trail:⋅
+
+set number
