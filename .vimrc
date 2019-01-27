@@ -34,3 +34,5 @@ if has("autocmd")
   au VimLeave * silent execute '!echo -ne "\e[ q"' | redraw!
 endif
 
+" Use X Windows clipboard
+set clipboard=unnamedplus
