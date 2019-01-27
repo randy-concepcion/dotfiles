@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export TERM="xterm-256color"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/randy/.oh-my-zsh"
@@ -15,7 +16,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_CONTEXT_TEMPLATE="%n [at] `hostname`"
 POWERLEVEL9K_MODE="nerdfont-complete"
 #POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(history dir status)
-##POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time vcs)
+#POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time vcs)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=$'%F{024}'$'\u256D'$'\uE0B2'$'%F{reset_color}'
 POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX=$'%F{024}'$'\u2570'$'\u2192 '$'%F{reset_color}'
@@ -25,8 +26,12 @@ POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 POWERLEVEL9K_SHOW_CHANGESET=true
 # just show the 6 first characters of changeset
 POWERLEVEL9K_CHANGESET_HASH_LENGTH=6
-POWERLEVEL9K_HISTORY_BACKGROUND="024"
-POWERLEVEL9K_IGNORE_TERM_COLORS=true
+POWERLEVEL9K_HISTORY_BACKGROUND="244"
+#POWERLEVEL9K_IGNORE_TERM_COLORS=true
+POWERLEVEL9K_TIME_FORMAT="%D{%I:%M:%S %p}"
+POWERLEVEL9K_DIR_BACKGROUND="cyan"
+POWERLEVEL9K_ALTDIR_FOREGROUND="black"
+POWERLEVEL9_ALTDIR_BACKGROUND="cyan"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
