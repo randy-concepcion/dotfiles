@@ -193,3 +193,6 @@ bindsym XF86AudioPrev exec playerctl previous
 # Save windows in browser
 for_window [class="^[fF]irefox" title="^Save As$"] floating enable, resize set 1600 1200, move position center
 for_window [class="^[gG]oogle" title="^Save File$"] floating enable, resize set 1600 1200, move position center
+
+# Flameshot
+exec --no-startup-id flameshot
