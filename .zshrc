@@ -125,3 +125,6 @@ export GIT_EDITOR=vim
 ## Terminal
 alias profile_refresh="source ~/.zshrc && echo \"~/.zshrc profile refreshed\""
 alias ls='ls --color=auto'
+
+# Use Environment variables
+source ~/.env
