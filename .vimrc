@@ -54,3 +54,12 @@ endif
 
 " Use X Windows clipboard
 set clipboard=unnamedplus
+
+" Support the write command when lazily typing W (as opposed to w)
+command! -bar -nargs=* -complete=file -range=% -bang W         <line1>,<line2>write<bang> <args>
+command! -bar -nargs=* -complete=file -range=% -bang Write     <line1>,<line2>write<bang> <args>
+command! -bar -nargs=* -complete=file -range=% -bang Wq        <line1>,<line2>wq<bang> <args>
+command! -bar                                  -bang Wqall     wqa<bang>
+command! -bar -nargs=* -complete=file -range=% -bang We        <line1>,<line2>w<bang> | e <args>
+command! -bar -nargs=* -complete=file -count   -bang Wnext     <count>wnext<bang> <args>
+command! -bar -nargs=* -complete=file -count   -bang Wprevious <count>wprevious<bang> <args>
