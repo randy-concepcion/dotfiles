@@ -35,6 +35,9 @@ set listchars=trail:⋅
 
 set number
 
+" Make the full path of the file visible in the status bar
+set statusline+=%F
+
 " Make it obvious where 80 characters is
 set textwidth=80
 set colorcolumn=+1
