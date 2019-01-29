@@ -36,7 +36,8 @@ set listchars=trail:⋅
 set number
 
 " Make the full path of the file visible in the status bar
-set statusline+=%F
+set laststatus=2
+set ruler
 
 " Make it obvious where 80 characters is
 set textwidth=80
@@ -66,3 +67,5 @@ command! -bar                                  -bang Wqall     wqa<bang>
 command! -bar -nargs=* -complete=file -range=% -bang We        <line1>,<line2>w<bang> | e <args>
 command! -bar -nargs=* -complete=file -count   -bang Wnext     <count>wnext<bang> <args>
 command! -bar -nargs=* -complete=file -count   -bang Wprevious <count>wprevious<bang> <args>
+command! Q q
+command! WQ wq
