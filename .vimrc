@@ -56,6 +56,11 @@ if has("autocmd")
   au VimLeave * silent execute '!echo -ne "\e[ q"' | redraw!
 endif
 
+" Press <Tab> and <Shift+Tab> to indent/unindent a highlighted block
+" and keep highlight
+vmap <Tab> >gv
+vmap <S-Tab> <gv
+
 " Use X Windows clipboard
 set clipboard=unnamedplus
 
@@ -67,5 +72,7 @@ command! -bar                                  -bang Wqall     wqa<bang>
 command! -bar -nargs=* -complete=file -range=% -bang We        <line1>,<line2>w<bang> | e <args>
 command! -bar -nargs=* -complete=file -count   -bang Wnext     <count>wnext<bang> <args>
 command! -bar -nargs=* -complete=file -count   -bang Wprevious <count>wprevious<bang> <args>
+
+" Support the quite command when lazily typing Q (as opposed to q)
 command! Q q
 command! WQ wq
