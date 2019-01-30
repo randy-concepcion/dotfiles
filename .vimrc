@@ -35,6 +35,8 @@ set listchars=trail:⋅
 
 set number
 
+set mouse=a
+
 " Make the full path of the file visible in the status bar
 set laststatus=2
 set ruler
