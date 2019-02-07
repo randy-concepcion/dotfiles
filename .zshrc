@@ -121,6 +121,9 @@ source $ZSH/oh-my-zsh.sh
 # Git
 export GIT_EDITOR=vim
 
+# npm global folder
+export PATH=~/.npm-global/bin:$PATH
+
 # Aliases
 ## Terminal
 alias profile_refresh="source ~/.zshrc && echo \"~/.zshrc profile refreshed\""
