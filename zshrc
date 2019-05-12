@@ -128,6 +128,8 @@ export PATH=~/.npm-global/bin:$PATH
 ## Terminal
 alias profile_refresh="source ~/.zshrc && echo \"~/.zshrc profile refreshed\""
 alias ls='ls --color=auto'
+alias cdrandy='cd ~/repo/randy'
+alias cdpg='cd ~/repo/work/policygenius'
 
 # Use Environment variables
 source ~/.env
