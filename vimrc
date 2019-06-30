@@ -1,5 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
+filetype plugin on
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -19,8 +20,21 @@ call vundle#end()            " required
 filetype plugin indent on
 syntax on
 
+set showcmd  " bottom line will show information about command
+set wildmenu " visual autocomplete for command menu
+set hlsearch " highlight matches when searching
+set incsearch " incremental searching
+set ignorecase " searches while ignoring case
+set smartcase " unless the search contains 1+ capital letters
+
+
 " NERDTree: Open/Close with backslash
-nmap \ :NERDTreeToggle<CR>
+nmap \ :NERDTreeToggle<Enter>
+let NERDTreeQuitOnOpen=1
+let NERDTreeAutoDeleteBuffer=1
+let NERDTreeMinimalUI=1
+let NERDTreeDirArrows=1
+
 
 " 'matchit.vim' is built-in so let's enable it!
 " Hit '%' on 'if' to jump to 'else'.
@@ -35,8 +49,13 @@ hi CursorLine   cterm=NONE ctermbg=000 guibg=darkred guifg=white
 hi CursorColumn cterm=NONE ctermbg=000 guibg=darkred guifg=white
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
-:nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+:nnoremap <Leader>c :set cursorline! cursorcolumn!<Enter>
 
+" NERDCommenter Leader changed from \ to ,
+"let mapleader=","
+"nmap <Leader>c<space> <Leader>,/
+nnoremap ,/ :call NERDComment(0, "toggle")<Enter>
+vnoremap ,/ :call NERDComment(0, "toggle")<Enter>
 
 set tabstop=4       " The width of a TAB is set to 4.
                     " Still it is a \t. It is just that
