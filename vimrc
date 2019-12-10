@@ -79,7 +79,8 @@ set mouse=a
 " Make the full path of the file visible in the status bar
 set laststatus=2
 set ruler
-set nowrap
+set nowrap           " do not automatically wrap text on load
+set formatoptions-=t " do not automatically wrap text when typing
 
 " Make it obvious where 80 characters is
 set textwidth=80
