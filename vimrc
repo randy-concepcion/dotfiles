@@ -82,6 +82,9 @@ set ruler
 set nowrap           " do not automatically wrap text on load
 set formatoptions-=t " do not automatically wrap text when typing
 
+" Disable auto-commenting on newline
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
 " Make it obvious where 80 characters is
 set textwidth=80
 set colorcolumn=+1
