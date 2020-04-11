@@ -30,5 +30,6 @@
     font = DroidSansMono Nerd Font 11
     icon_bell = False
     scrollback_infinite = True
+    scrollbar_position = hidden
     show_titlebar = False
     use_system_font = False
