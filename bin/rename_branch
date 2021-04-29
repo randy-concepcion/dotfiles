@@ -1,0 +1,21 @@
+#!/bin/bash
+
+OLD_BRANCH=$1
+NEW_BRANCH=$2
+
+# TODO: Add checks for parameters and usage info
+
+# Refresh
+git fetch
+
+# Checkout branch to change locally
+git checkout -b $OLD_BRANCH
+
+# Rename local branch
+git branch -m $NEW_BRANCH
+
+# Push new branch to remote
+git push origin -u $NEW_BRANCH
+
+# Delete old remote branch
+git push --delete $OLD_BRANCH
