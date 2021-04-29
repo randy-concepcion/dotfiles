@@ -130,6 +130,7 @@ alias profile_refresh="source ~/.zshrc && echo \"~/.zshrc profile refreshed\""
 alias ls='ls --color=auto'
 alias cdrandy='cd ~/repo/randy'
 alias cdpg='cd ~/repo/work/policygenius'
+alias rename_branch='/usr/local/bin/rename_branch'
 
 # Use Environment variables
 source ~/.env
