@@ -37,8 +37,8 @@ let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 
 " NERDCommenter: Change leader from \ to ,
-nnoremap ,/ :call NERDComment(0, "toggle")<Enter>
-vnoremap ,/ :call NERDComment(0, "toggle")<Enter>
+nnoremap ,/ :call nerdcommenter#Comment(0, "toggle")<Enter>
+vnoremap ,/ :call nerdcommenter#Comment(0, "toggle")<Enter>
 
 " General
 set autoindent                  " Minimal automatic indenting for any filetype
