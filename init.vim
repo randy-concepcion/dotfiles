@@ -1,3 +1,4 @@
+" === Add this to ~/.config/nvim/init.vim ===
 " Install vim-plug if it doesn't exist on system
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
