@@ -62,8 +62,12 @@ set cursorcolumn
 set cursorline
 
 
-" Make it obvious where 80 characters is
-set cc=80
+" Make it obvious where the line limits are
+" For Python
+autocmd FileType python setlocal colorcolumn=88
+
+" For JavaScript and TypeScript
+autocmd FileType javascript,typescript setlocal colorcolumn=80
 
 
 " Set footer theme
@@ -144,5 +148,13 @@ command! WQ wq
 let g:ale_linters = {
       \   'python': ['flake8', 'pylint'],
       \   'ruby': ['rubocop'],
+      \   'typescript': ['eslint'],
+      \   'javascript': ['eslint', 'prettier'],
+      \   'css': ['prettier'],
+      \}
+
+let g:ale_fixers = {
+      \   'python': ['black'],
+      \   'typescript': ['eslint'],
       \   'javascript': ['eslint'],
       \}
